@@ -1,0 +1,36 @@
+<div class="sidenav" [style.width]="displayWidth">
+  <a class="closebtn" (click)="closeNav()">&times;</a>
+  <a routerLink="/">Home Page</a>
+  <a [routerLink]="['/category', 1]">Animals</a>
+  <a [routerLink]="['/category', 2]">Colors</a>
+  <a [routerLink]="['/category', 3]">Weather</a>
+  <a [routerLink]="['/category', 4]">Birds</a>
+  <a [routerLink]="['/category', 5]">Home</a>
+  <a [routerLink]="['/category', 6]">Body</a>
+  <a [routerLink]="['/category', 7]">Fruits</a>
+  <a [routerLink]="['/category', 8]">Vegetables</a>
+  <a [routerLink]="['/category', 9]">Family</a>
+  <a [routerLink]="['/category', 10]">Space</a>
+  <a [routerLink]="['/category', 11]">Forms</a>
+  <a [routerLink]="['/category', 12]">Emotions</a>
+  <a [routerLink]="['/category', 13]">Seasons</a>
+  <a [routerLink]="['/category', 13]">Transport</a>
+  <a [routerLink]="['/category', 13]">Food</a>
+</div>
+<header class="header">
+  <div class="navigation" (click)="openNav()">
+      <div class="navigation__bar1"></div>
+      <div class="navigation__bar2"></div>
+      <div class="navigation__bar3"></div>
+  </div>
+  <div class="logo">
+      <a routerLink="/" class="logo__title">Learn and Play</a>
+  </div>
+  <div class="toggle-switch">
+      <label class="switch">
+      <input type="checkbox">
+      <span class="slider round"><span class="on">PLAY</span><span class="off">TRAIN</span></span>
+    </label>
+  </div>
+</header>
+
