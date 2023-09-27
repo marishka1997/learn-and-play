@@ -16,7 +16,6 @@ import { MainContentComponent } from './main-content/main-content.component';
     WelcomePageComponent,
     HeaderComponent,
     FooterComponent,
-
     CardComponent,
     MainContentComponent
   ],
