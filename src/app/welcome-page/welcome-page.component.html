@@ -1,6 +1,6 @@
-<!-- <div class="welcome-container">
-  <h1>Welcome to Learn and Play</h1>
-  <p>What is your name, little friend?</p>
-  <input [(ngModel)]="userName" placeholder="Your Name">
+<div class="welcome-container wrapper">
+  <h3>Welcome to Learn and Play</h3>
+  <p>Hi, what is your name, little friend?</p>
+  <input [(ngModel)]="userName" placeholder="Name" (keydown.enter)="onEnterPress()">
   <button (click)="startApp()">Start</button>
-</div> -->
+</div>

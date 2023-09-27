@@ -70,7 +70,7 @@ export class CategoryService {
       title: 'Forms',
       id: 11,
       quantity: 5,
-      imageUrl: '../../assets/categories/group-fruits.png',
+      imageUrl: '../../assets/categories/group-forms.png',
     },
     {
       title: 'Space',

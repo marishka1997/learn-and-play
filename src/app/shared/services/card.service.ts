@@ -28,7 +28,7 @@ export class CardService {
       categoryId: 1,
       name: 'Horse',
       translation: 'ცხენი',
-      imageUrl: '../..assets/cards/animals/horse.png',
+      imageUrl: '../../assets/cards/animals/horse.png',
     },
     {
       categoryId: 1,
@@ -40,7 +40,7 @@ export class CardService {
       categoryId: 1,
       name: 'Rabbit',
       translation: 'კურდღელი',
-      imageUrl: '../..assets/cards/animals/rabbit.png',
+      imageUrl: '../../assets/cards/animals/rabbit.png',
     },
     {
       categoryId: 1,
@@ -161,7 +161,7 @@ export class CardService {
       categoryId: 2,
       name: 'Hummingbird',
       translation: 'კოლიბრი',
-      imageUrl: '../../assets/cards/birds/hummingbird.png',
+      imageUrl: '../../assets/cards/birds/humming-bird.png',
     },
     {
       categoryId: 2,
@@ -198,7 +198,7 @@ export class CardService {
       categoryId: 3,
       name: 'Yellow',
       translation: 'ყვითელი',
-      imageUrl: '../../assets/cards/colors/Yellow.png',
+      imageUrl: '../../assets/cards/colors/yellow.png',
     },
     {
       categoryId: 3,
@@ -470,7 +470,7 @@ export class CardService {
     },
     {
       categoryId: 7,
-      name: 'Windy',
+      name: 'Wind',
       translation: 'ქარიანი',
       imageUrl: '../../assets/cards/weather/wind.png',
     },
@@ -588,7 +588,7 @@ export class CardService {
       categoryId: 9,
       name: 'Lemon',
       translation: 'ლიმონი',
-      imageUrl: '../../assets/cards/fruits/citrus.png',
+      imageUrl: '../../assets/cards/fruits/lemon.png',
     },
     {
       categoryId: 9,
@@ -627,7 +627,7 @@ export class CardService {
       imageUrl: '../../assets/cards/fruits/blueberry.png',
     },
     {
-      categoryId: 2,
+      categoryId: 9,
       name: 'Plum',
       translation: 'ქლიავი',
       imageUrl: '../../assets/cards/fruits/plum.png',
@@ -661,7 +661,7 @@ export class CardService {
       categoryId: 10,
       name: 'Tomato',
       translation: 'პომიდორი',
-      imageUrl: '../../assets/cards/vegetables/potato.png',
+      imageUrl: '../../assets/cards/vegetables/tomato.png',
     },
     {
       categoryId: 10,
@@ -731,15 +731,15 @@ export class CardService {
     },
     {
       categoryId: 10,
-      name: 'Mushroom',
-      translation: 'სოკო',
-      imageUrl: '../../assets/cards/vegetables/mushroom.png',
+      name: 'Bell Pepper',
+      translation: 'ბულგარული წიწაკა',
+      imageUrl: '../../assets/cards/vegetables/sweet-pepper.png',
     },
     {
       categoryId: 10,
-      name: 'Bell Pepper',
-      translation: 'ბულგარული წიწაკა',
-      imageUrl: '../../assets/cards/vegetables/paprika.png',
+      name: 'Mushroom',
+      translation: 'სოკო',
+      imageUrl: '../../assets/cards/vegetables/mushroom.png',
     },
 
     {
@@ -946,6 +946,9 @@ export class CardService {
 
   constructor() {}
   public getCards(categoryId: number): any[] {
+    return this.gameCards.filter((card) => card.categoryId === categoryId);
+  }
+  public getReverseCards(categoryId: number): any[] {
     return this.gameCards.filter((card) => card.categoryId === categoryId);
   }
 }

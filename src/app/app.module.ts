@@ -9,7 +9,10 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { CardComponent } from './card/card.component';
 import { MainContentComponent } from './main-content/main-content.component';
-
+import { CategoryComponent } from './category/category.component';
+import { ReverseCardComponent } from './reverse-card/reverse-card.component';
+import {MatDialog, MatDialogRef, MatDialogModule} from '@angular/material/dialog';
+import {MatButtonModule} from '@angular/material/button';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,13 +20,17 @@ import { MainContentComponent } from './main-content/main-content.component';
     HeaderComponent,
     FooterComponent,
     CardComponent,
-    MainContentComponent
+    MainContentComponent,
+    CategoryComponent,
+    ReverseCardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    FormsModule
+    FormsModule,
+    MatDialogModule,
+MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

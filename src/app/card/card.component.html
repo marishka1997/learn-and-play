@@ -1,1 +1,3 @@
-<p>card works!</p>
+<div class="main wrapper">
+  <app-reverse-card *ngFor="let card of gameReverseCards" [name]="card.name" [translation]="card.translation" [imageUrl]="card.imageUrl"></app-reverse-card>
+</div>

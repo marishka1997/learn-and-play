@@ -1,0 +1,16 @@
+<div class="card" (click)="showCategoryCards()">
+  <a [routerLink]="['/category', categoryId]" class="card__link" alt="title">
+      <img src="{{ imageUrl }}" class="card__image" />
+  </a>
+  <h2 class="card__title">
+      {{ title }}
+  </h2>
+  <div class="card__description">
+      <div class="card__amount">
+          <p>
+              {{ quantity }} cards
+          </p>
+      </div>
+      <div class="condition"></div>
+  </div>
+</div>
