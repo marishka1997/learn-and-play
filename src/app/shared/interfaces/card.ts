@@ -3,4 +3,5 @@ export interface Card {
   name: string;
   translation: string;
   imageUrl: string;
+  audioSrc: string;
 }
